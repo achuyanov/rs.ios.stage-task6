@@ -21,6 +21,6 @@ class CoronaClass {
      }
      
      func leave(_ p: Int) {
-         
+        if let pos = seats.firstIndex(of: p) { seats.remove(at: pos) }
      }
 }
