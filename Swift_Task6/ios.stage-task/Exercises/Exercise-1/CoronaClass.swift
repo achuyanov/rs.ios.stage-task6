@@ -10,7 +10,14 @@ class CoronaClass {
      }
      
      func seat() -> Int {
-        -1
+        //1st seat
+        if seats.isEmpty {
+            seats.append(0)
+            return 0
+        }
+        
+
+        return -1
      }
      
      func leave(_ p: Int) {
