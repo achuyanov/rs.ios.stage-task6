@@ -15,7 +15,12 @@ class CoronaClass {
             seats.append(0)
             return 0
         }
-        
+        //last seat
+        if seats.count == 1 {
+            seats.append(n-1)
+            return n-1
+            
+        }
 
         return -1
      }
